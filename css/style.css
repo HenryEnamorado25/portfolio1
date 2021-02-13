@@ -1,6 +1,7 @@
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
+  align-items: center;
 }
 .headerContainer {
   background-image: url(../img/bg-header5.jpg);
@@ -67,15 +68,16 @@ ul {
 
   color: #354456;
   text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
-    0.4vw 0vw 0.1vw #c087a8, 0.1vw 0vw 2vw #c087a8, 0.2vw 0vw 2vw #c087a8,
-    0.4vw 0vw 2vw #c087a8, 0.1vw 0vw 1vw #934d76, 0.2vw 0vw 1vw #934d76,
-    0.2vw 0vw 20vw #934d76;
+    0.4vw 0vw 0.1vw #07143a, 0.1vw 0vw 2vw #07143a, 0.2vw 0vw 2vw #07143a,
+    0.4vw 0vw 2vw #07143a, 0.1vw 0vw 1vw #2f4172, 0.2vw 0vw 1vw #2f4172,
+    0.2vw 0vw 20vw #2f4172;
 }
 .btnProjects {
+  color: #fff;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  background-color: #07beb8;
+  background-color: #172856;
   border-radius: 24px;
   border: none;
   cursor: pointer;
@@ -83,8 +85,9 @@ ul {
   height: 40px;
 }
 .btnProjects:hover {
-  background-color: #d40c60;
-  color: #edf2e3;
+  background-color: #4f608e;
+  font-weight: bold;
+  color: #000;
 }
 .skew {
   position: absolute;
@@ -96,7 +99,7 @@ ul {
 }
 .aboutMe {
   width: 100vw;
-  height: 100vh;
+  height: 20rem;
 }
 .titleAboutMe {
   margin-bottom: 20px;
@@ -113,14 +116,61 @@ ul {
 }
 .Iam {
   height: 20rem;
-  border: solid #934d76;
-  border-radius: 24px;
-  margin: 3px 3px 3px 3px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
-
+/*line*/
 .line {
   width: 50%;
   height: 2px;
   color: #000;
   background-color: #000;
+}
+.skillsContainer {
+  margin-top: 0;
+  height: 30rem;
+  width: 100%;
+}
+.skillsContainer div {
+  justify-content: center;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+.techSkills,
+.otherSkills {
+  text-align: center;
+
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.skillTitle h2 {
+  border-bottom: solid black;
+}
+
+.skillsContainer ul {
+  list-style: none;
+  font-size: larger;
+  text-align: left;
+}
+.skillsContainer ul li {
+  margin: 0.5rem 0.5rem;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.underIcons {
+  width: 100%;
+  font-size: 40px;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+.underIcons i {
+  margin: auto 2rem;
 }
