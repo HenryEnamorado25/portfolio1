@@ -2,20 +2,21 @@
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .headerContainer {
-  background-image: url(../img/bg-header5.jpg);
+  background-image: url("../img/bg-header-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-position: center;
   background-attachment: fixed;
 
-  height: 96.3%;
+  height: 96.4%;
   width: 100%;
 }
-
-.menu ul {
+menu .menu ul {
   display: inline-flex;
   list-style-type: none;
   font-family: "Architects Daughter", cursive;
@@ -30,6 +31,7 @@ ul {
   margin: 0.5rem;
   padding: 0.5rem;
   text-shadow: 0.5px 0.5px #281520;
+  float: initial;
 }
 .active:hover {
   background-color: #2e4052;
@@ -42,8 +44,8 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-transform: uppercase;
-  height: 100vh;
+  text-transform: capitalize;
+  height: 96vh;
   width: 100%;
   margin: auto;
 }
@@ -52,8 +54,8 @@ ul {
   margin: auto;
   font-weight: bold;
   color: #edf2e3;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 2rem;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -83,6 +85,7 @@ ul {
   cursor: pointer;
   width: 120px;
   height: 40px;
+  outline: none;
 }
 .btnProjects:hover {
   background-color: #4f608e;
@@ -107,6 +110,7 @@ ul {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 20px;
 }
 .contentAboutMe {
   display: flex;
@@ -114,21 +118,28 @@ ul {
   text-align: center;
   flex-direction: row;
 }
+.contentAboutMe h2 {
+  margin: 20px;
+}
 .Iam {
   height: 20rem;
-  margin: 5px 5px 5px 5px;
-  padding: 5px 5px 5px 5px;
+  margin: 5px 150px;
+  padding: 5px 150px;
+  font-size: 20px;
 }
 /*line*/
 .line {
-  width: 50%;
+  text-align: center;
+  width: 100%;
   height: 2px;
   color: #000;
   background-color: #000;
+  margin: 0.5px;
+  padding: 0.5px;
 }
 .skillsContainer {
   margin-top: 0;
-  height: 30rem;
+  height: 25rem;
   width: 100%;
 }
 .skillsContainer div {
@@ -163,9 +174,9 @@ ul {
 .icon {
   font-size: 35px;
 }
-
 .underIcons {
   width: 100%;
+  height: auto;
   font-size: 40px;
   display: inline-block;
   text-align: center;
@@ -173,4 +184,53 @@ ul {
 }
 .underIcons i {
   margin: auto 2rem;
+}
+
+/*project*/
+.projectsSection {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg-header2.jpg");
+}
+/*projects end*/
+
+/*contact me*/
+.contactContainer {
+  width: 100vw;
+  height: 75vh;
+}
+
+form {
+  width: 300px;
+}
+input {
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+  max-height: 200px;
+}
+input,
+textarea {
+  outline: none;
+}
+/*contact me end*/
+
+@media screen and (max-width: 1100px) {
+  .Iam {
+    margin: 5px 55px;
+    padding: 5px 55px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Iam {
+    margin: 5px 15px;
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .underIcons {
+    display: none;
+  }
 }
