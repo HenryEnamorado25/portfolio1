@@ -4,6 +4,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 .headerContainer {
   background-image: url("../img/bg-header-3.jpg");
@@ -16,26 +17,53 @@
   height: 96.4%;
   width: 100%;
 }
-menu .menu ul {
-  display: inline-flex;
-  list-style-type: none;
+.menu {
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: white;
+}
+
+.list {
   font-family: "Architects Daughter", cursive;
-  color: #cccccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  color: black;
+  list-style-type: none;
+
+  right: 2%;
 }
-ul {
-  text-align: right;
-}
-.menu ul li {
+
+.list li {
+  border-right: solid 1px #5da7ff;
   font-weight: bold;
-  font-size: large;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  text-shadow: 0.5px 0.5px #281520;
-  float: initial;
+  font-size: 20px;
+  margin: 10px 25px;
+  padding: 10px 25px;
+
+  cursor: pointer;
 }
-.active:hover {
-  background-color: #2e4052;
-  border-radius: 25%;
+
+.list li:hover {
+  font-size: 21px;
+  text-decoration: underline;
+}
+.icons {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+}
+.icons a {
+  color: inherit;
+}
+.icons a i {
+  margin: 5px;
 }
 
 .presentation {
@@ -53,7 +81,7 @@ ul {
 .presentation p {
   margin: auto;
   font-weight: bold;
-  color: #edf2e3;
+  color: white;
   font-family: "Akaya Telivigala", cursive;
   font-size: 2rem;
   margin: 0.5rem;
@@ -102,11 +130,11 @@ ul {
 }
 .aboutMe {
   width: 100vw;
-  height: 20rem;
+  height: 100%;
 }
 .titleAboutMe {
   margin-bottom: 20px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -123,9 +151,12 @@ ul {
 }
 .Iam {
   height: 20rem;
-  margin: 5px 150px;
-  padding: 5px 150px;
+  margin: 15px 120px;
+  padding: 5px 120px;
   font-size: 20px;
+}
+.Iam p {
+  margin: 10px auto;
 }
 /*line*/
 .line {
@@ -138,8 +169,8 @@ ul {
   padding: 0.5px;
 }
 .skillsContainer {
-  margin-top: 0;
-  height: 25rem;
+  margin-top: 40px;
+  height: 100%;
   width: 100%;
 }
 .skillsContainer div {
@@ -147,6 +178,7 @@ ul {
 }
 .skills {
   display: flex;
+
   flex-direction: row;
 }
 .techSkills,
@@ -183,54 +215,365 @@ ul {
   justify-content: center;
 }
 .underIcons i {
-  margin: auto 2rem;
+  margin: 20px 50px;
 }
 
 /*project*/
 .projectsSection {
   color: white;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url("../img/bg-header2.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pjTitle {
+  text-decoration: underline;
+  font-size: 40px;
+  border: solid white 2px;
+  text-align: center;
+  padding: 10px 45px;
+  margin: 25px;
+}
+.projects img {
+  height: 300px;
+  width: 400px;
+  border: solid 2px #6d94ff;
+  border-radius: 20px;
+  margin: 25px;
+  object-fit: cover;
+}
+.info {
+  text-align: center;
+  font-size: 18px;
+  border: solid 3px white;
+  border-radius: 15px;
+  width: 550px;
+  height: fit-content;
+  margin: 30px;
+  padding: 25px;
+}
+.info:hover {
+  border: solid 3px #6d94ff;
+}
+.info span {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.info a {
+  border-right: solid #4f608e 1px;
+  border-left: solid #4f608e 1px;
+  text-decoration: underline;
+  color: #4f608e;
+  padding: 5px;
+}
+.info a:hover {
+  font-size: 20px;
 }
 /*projects end*/
 
 /*contact me*/
 .contactContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100vw;
-  height: 75vh;
+  height: 100%;
+  background-image: url("../img/bg-contact.jpg");
+  background-position: center;
 }
-
+.contactContainer p {
+  color: white;
+  font-size: 40px;
+  text-decoration: underline;
+  border: solid white 1px;
+  background-color: transparent;
+  padding: 5px;
+  margin: 10px;
+}
 form {
-  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: white;
+  width: 420px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px #5da7ff;
+  border-radius: 20px;
+  height: 500px;
+}
+label {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 input {
+  border: solid 2px #172856;
+  border-radius: 5px;
+  height: 40px;
   width: 100%;
+  margin: 10px;
 }
 textarea {
+  border: solid 2px #172856;
+  border-radius: 5px;
   resize: vertical;
-  max-height: 200px;
+  height: 250px;
+  max-height: 300px;
+  margin: 10px;
 }
 input,
 textarea {
+  width: 380px;
   outline: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 4px rgba(255, 0, 0, 0.9);
+  outline: none;
+}
+.sendBtn {
+  justify-content: center;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  color: black;
+  background-color: #5da7ff;
+  border: solid 2px #172856;
+  cursor: pointer;
+}
+.sendBtn:hover {
+  border: solid 3px #172856;
+  font-size: 20px;
+}
+
+.footerText {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 1);
+  border-top: 5px solid #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerText p {
+  color: #fff;
+  font-size: 25px;
 }
 /*contact me end*/
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .Iam {
     margin: 5px 55px;
     padding: 5px 55px;
   }
+  .info {
+    width: 500px;
+    margin: 15px;
+    padding: 15px;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
+  .info {
+    width: 480px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Iam {
+    margin: 5px 35px;
+    padding: 5px 35px;
+  }
+  .info {
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .projects img {
+    height: 250px;
+    width: 350px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    display: none;
+  }
+  .Iam {
+    margin: 5px 30px;
+    padding: 5px 30px;
+    font-size: 18px;
+  }
+  .techSkills,
+  .otherSkills {
+    margin: 25px 20px;
+    padding: 25px 20px;
+  }
+  .underIcons i {
+    margin: 20px 40px;
+  }
+
+  .info {
+    height: 480px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .presentation {
+    height: 85vh;
+  }
+
+  .presentation p {
+    font-size: 35px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .presentation p span {
+    font-size: 70px;
+  }
   .Iam {
     margin: 5px 15px;
     padding: 5px 15px;
+    font-size: 18px;
+  }
+  .skillsContainer {
+    margin-top: 60px;
+  }
+  .techSkills,
+  .otherSkills {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+  .info {
+    font-size: 17px;
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .projects img {
+    height: 250px;
+    width: 370px;
+    margin: 5px;
+  }
+  .underIcons i {
+    margin: 15px 25px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 514px) {
   .underIcons {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .presentation {
+    height: 80vh;
+  }
+
+  .presentation p {
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .presentation p span {
+    font-size: 65px;
+  }
+  .info {
+    font-size: 16px;
+    width: 400px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .Iam {
+    margin: 5px 5px;
+    padding: 5px 5px;
+    font-size: 17px;
+  }
+
+  .techSkills,
+  .otherSkills {
+    margin: 15px 10px;
+    padding: 15px 10px;
+  }
+
+  .projects img {
+    width: 360px;
+  }
+  .footerText {
+    height: 40px;
+  }
+  .footerText p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .presentation {
+    height: 75vh;
+  }
+
+  .presentation p {
+    font-size: 25px;
+    margin: 2.5px;
+    padding: 2.5px;
+  }
+  .presentation p span {
+    font-size: 45px;
+  }
+
+  .info {
+    font-size: 15px;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .Iam {
+    font-size: 15px;
+  }
+  .skillsContainer {
+    margin-top: 80px;
+  }
+
+  .techSkills,
+  .otherSkills {
+    font-size: 13px;
+    margin: 10px auto;
+    padding: 10px auto;
+  }
+  .projects img {
+    width: 280px;
+  }
+  form {
+    width: 300px;
+    padding: auto;
+    margin: auto;
+  }
+
+  input,
+  textarea {
+    width: 280px;
+  }
+  .footerText {
+    height: 40px;
+  }
+  .footerText p {
+    font-size: 13px;
   }
 }

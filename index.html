@@ -30,17 +30,23 @@
 <body>
     <div class="headerContainer">
         <div class="menu">
-            <ul>
+            <ul class="list">
                 <li class="active" >Home</li>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
+                <li id="about">About Me</li>
+                <li id="project">Projects</li>
+                <li id="contact">Contact Me</li>
             </ul>
         </div>
+        <div class="icons">
+           <a target="_blank" href="https://github.com/HenryEnamorado25"><i class="fab fa-github"></i></a> 
+        <a  target="_blank" href="https://www.linkedin.com/in/henry-enamorado-b0227a1ba/"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+        
+
         
         <div class="presentation">
             <div><p>Henry Enamorado's<br><span>portfolio</span><br>front-end Developer</p>
-            <button class="btnProjects">Projects</button>
+            <button class="btnProjects" id="projectBtn">Projects</button>
         </div>
             
             </div>
@@ -57,92 +63,159 @@
             <div class="contentAboutMe">
                 <div class="Iam">
                     <h2>Who Am I? <spam>/</spam> What I do?</h2>
-                    <p>Hello, I am Henry Enamorado a Front-end Developer from Florida.</p>
+                    <p>Hello, I am Henry Enamorado a Front-end Developer from Florida.
+                         My great analytical skills make me able to understand how
+                          things work by just seeing how everything flows, 
+                          which makes me easy to understand how programming works.</p>
                     
-                    <p>I like to turn the idea of ​​a person, through code, into something
-                     real that can be seen through the browser. </p>
-                     <p>I am eager to share my analytical skills and problem-solving
-                          skills with a great team so that we grow as professionals.
+                    <p>I like to take the idea of ​​a person and turn it into something
+                         real, that can be used by people to solve their needs.</p>
+                     <p>I am eager to use my problem-solving and analytical skills
+                          together with a team, so that we can grow as professionals 
+                    and individuals. 
                     </p>
-                    <p>I started programming with C++ at a very young age at my school and I found it fascinating.
-                        I loved the challenge of solving day-to-day problems and even
-                        those that programming presents.
+                    <p>My passion for programming has made me go beyond what is expected, having to have the discipline to be able to work,
+                    attend college and study separately to learn what is required to be a developer.
                     </p>
 
-                        </div>               
+                </div>               
             </div>
-
+            <section class="skillsContainer">
+            
+            
+                <div class="skills">
+                    <div class="techSkills">
+                        <div class="icon"><i class="fas fa-book-reader"></i></div>
+                        <div class="skillTitle">
+                            <h2>Technicals skills</h2>
+                        </div>
+                        <ul>
+                            <li>Html5</li>
+                            <li>CCS3</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+            
+                    <div class="otherSkills">
+                        <div class="icon"><i class="far fa-clipboard"></i></div>
+                        <div class="skillTitle"></i>
+                            <h2>Other Skills</h2>
+                        </div>
+                        <ul>
+                            <li>Analitical Skills</li>
+                            <li>Problem-solving skills</li>
+                            <li>Team Worker</li>
+                            <li>Overcomer</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </section>
       </section>
+      <div class="underIcons">
+                <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i><i
+                    class="fab fa-bootstrap"></i><i class="fab fa-react"></i><i class="fab fa-git"></i>
+            </div>
+            <!--skills end-->
+
       <!---about me end-->
 
       <!--skills-->
-      <section class="skillsContainer">
-          
-           
-            <div class="skills">
-                <div class="techSkills"> 
-                    <div class="icon"><i class="fas fa-book-reader"></i></div>
-                    <div class="skillTitle"><h2>Technicals skills</h2></div>
-                    <ul>
-                        <li>Html5</li>
-                        <li>CCS3</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>React</li>
-                        <li>Git</li>     
-                    </ul>
-                </div>
-
-                <div class="otherSkills">
-                    <div class="icon"><i class="far fa-clipboard"></i></div>
-                    <div class="skillTitle"></i><h2>Other Skills</h2></div>
-                    <ul>
-                        <li>Analitical Skills</li>
-                        <li>Problem-solving skills</li>
-                        <li>Team Worker</li>
-                        <li>Overcomer</li>
-                    </ul>
-                </div>
-            </div>
-            
-      </section>
-
-          <div class="underIcons">
-              <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i
-                class="fab fa-js-square"></i><i class="fab fa-bootstrap"></i><i class="fab fa-react"></i><i
-                class="fab fa-git"></i>
-            </div>
-    
-
-
-      <!--skills end-->
+      
 
 <hr class="line">
       <!--Projects-->
       <section class="projectsSection">
-          <p>Projects</p>
+          <p class="pjTitle">Projects</p>
           <div class="projects">
-              <a></a>
+              <div class="info">
+                  <img src="./img/project1.png">
+                  <p><span>Therapist Webpage</span> </p>
+                  <br>
+                  <p>This is a proficional Webpage for a massage therapist 
+                      who wants to offer his services to the public and 
+                      this webPage meets what is requered to
+                    sell his service.This is a Website builded
+                     with <b>Html/CSS and JavaScripts</b>. </p>
+                     <br>
+                        <a href="#">Watch Project</a>
+                </div>
+            <div class="info">
+                <img src="./img/project2.png">
+                <p><span>Notary App</span></p>
+                <br>
+                <p>This is a Web Appliction that takes a few
+                     populars books and gives some data, like words
+                      total, the most and least used words and it
+                       also has a search bar to find a specific word.
+                        This project is build with <b>Html/CSS, Bootstrap
+                         and JavaScript.</b></p>
+                         <br>
+                        <a href="#">Watch Project</a>
+
+            </div>
+            <div class="info">
+                <img src="./img/project3.png">
+                <p><span>Recipes Broswer</span></p>
+                <br>
+                <p>This is a Web application to find food recipes by
+                     consuming a third-party API and that it can be
+                      use to search any kind of recipies through the search bar.
+                       This Web App is builded with <b>ReactJS.</b></p>
+                       <br>
+                
+                <a href="#">Watch Project</a>
+            </div>
+            <div class="info">
+                <img src="./img/project4.png">
+                <p><span>Snake Game</span></p>
+                <br>
+                <p>This is the classic Snake Game where you have
+                     to eat a chery to grow up as long as you can,
+                      but be carfull because you can bait your tail
+                       or hit a wall and this will end in a GameOver.
+                        This game is builded with full <b>JavaScript.</b></p>
+                        <br>
+
+                <a href="#">Watch Project</a>
+            </div>
+            
+            
+            
+            
           </div>
       </section>
       <!--Projects end-->
 
       <!--contact me-->
 
-      <section class="contactContainer">
-          <form class="form" method="GET">
-              <input type="text"  name="name" 
-              placeholder="type your Name...">
-            <input type="text" name="email" 
-            placeholder="type your E-mail...">
-            <input type="text" name="">
-            <textarea name="message" placeholder="type your message!"></textarea>
-            <button type="submit" name="submit">Submit</button>
-
+      <footer class="contactContainer">
+        
+          <p>Contact Me</p>
+        <form action="https://formcarry.com/s/UII9AoAWMH" method="POST" accept-charset="UTF-8">
+            <label for="name">Name : </label>
+            <input type="text" name="name" placeholder=" Type your Name...">
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" placeholder=" Type your E-mail...">
+            <label for="message">Type your Message</label>
+            <textarea name="message" placeholder="Type a massage!"></textarea>
+            <input type="hidden" name="_gotcha">
+            <button class="sendBtn" type="submit" name="submit">Send</button>
           </form>
-          
+        <div class="icons">
+            <a target="_blank" href="https://github.com/HenryEnamorado25"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/henry-enamorado-b0227a1ba/"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+        
 
-      </section>
+      </footer>
+      <div class="footerText">
+            <p>&copy;Henry Enamorado - 2021 | All Rights Reserved</p>
+        </div>
 
     <!--contact me-->
     <!--scripts-->
