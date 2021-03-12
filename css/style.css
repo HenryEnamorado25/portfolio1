@@ -131,20 +131,12 @@
   font-weight: bold;
   color: #000;
 }
-.skew {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-width: 0 0 10vh 100vw;
-  border-style: solid;
-  border-color: transparent transparent#fff transparent;
-}
 .aboutMe {
   width: 100vw;
   height: 100%;
 }
 .titleAboutMe {
-  margin-bottom: 20px;
+  margin: 20px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -577,9 +569,9 @@ textarea:focus {
   }
   .info {
     font-size: 15px;
-    width: 300px;
-    margin: 10px;
-    padding: 5px;
+    width: 200px;
+    margin: 2px;
+    padding: 2px;
   }
   .Iam {
     font-size: 15px;
@@ -596,8 +588,9 @@ textarea:focus {
   .projects img {
     width: 280px;
   }
+
   form {
-    width: 300px;
+    width: 250px;
     padding: auto;
     margin: auto;
   }
@@ -610,5 +603,53 @@ textarea:focus {
   }
   .footerText p {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .presentation p {
+    font-size: 20px;
+    margin: 2px;
+    padding: 2px;
+  }
+  .presentation p span {
+    font-size: 35px;
+  }
+  .info {
+    border: none;
+    font-size: 15px;
+    width: 200px;
+    margin: 0px 10px;
+    padding: 1px 5px;
+  }
+  .info:hover {
+    border: none;
+  }
+  .projects img {
+    width: 190px;
+    height: 190px;
+    margin: 1px;
+  }
+  .skillsContainer {
+    margin-top: 300px;
+  }
+  .techSkills,
+  .otherSkills {
+    font-size: 12px;
+    margin: 5px auto;
+    padding: 5px auto;
+  }
+
+  form {
+    width: 250px;
+  }
+  input,
+  textarea {
+    width: 240px;
+  }
+  .footerText {
+    height: 35px;
+  }
+  .footerText p {
+    font-size: 10px;
   }
 }
